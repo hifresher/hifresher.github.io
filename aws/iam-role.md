@@ -1,16 +1,16 @@
 # Step 1: Get RDS Resource Name
 
 ***Go to RDS Dashboard***
-![RDS IMG 1](./img/rds-1.png)
+![RDS IMG 1](./img/rds-1.PNG)
 
 ***Click to `rds-mysql-test` RDS and get info:***
 
-![RDS IMG 2](./img/rds-2.png)
-![RDS IMG 3](./img/rds-3.png)
+![RDS IMG 2](./img/rds-2.PNG)
+![RDS IMG 3](./img/rds-3.PNG)
 
 ***Click to `rds-mysql-readreplica-test-ap-southeast-1a` RDS and get info:***
 
-![RDS IMG 4](./img/rds-4.png)
+![RDS IMG 4](./img/rds-4.PNG)
 
 ***Click to `rds-mysql-readreplica-test` RDS and get info:*** Same above
 
@@ -31,14 +31,14 @@
 # Step 2: Create a custom Policy
 
 ***Go to `IAM` service:***
-![POLICY IMG 1](./img/iam-1.png)
+![POLICY IMG 1](./img/iam-1.PNG)
 
 ***Create new `Policy`***. JSON string at below:
 
-![POLICY IMG 2](./img/iam-2-policy-1.png)
-![POLICY IMG 3](./img/iam-2-policy-2.png)
-![POLICY IMG 4](./img/iam-2-policy-3.png)
-![POLICY IMG 5](./img/iam-2-policy-4.png)
+![POLICY IMG 2](./img/iam-2-policy-1.PNG)
+![POLICY IMG 3](./img/iam-2-policy-2.PNG)
+![POLICY IMG 4](./img/iam-2-policy-3.PNG)
+![POLICY IMG 5](./img/iam-2-policy-4.PNG)
 
 ```
 {
@@ -65,9 +65,9 @@
 
 ***Go to `IAM => Roles`, Attach policy created from Step 3 to your role:***
 
-![ROLE IMG 1](./img/iam-3-role-1.png)
-![ROLE IMG 2](./img/iam-3-role-2.png)
-![ROLE IMG 3](./img/iam-3-role-3.png)
+![ROLE IMG 1](./img/iam-3-role-1.PNG)
+![ROLE IMG 2](./img/iam-3-role-2.PNG)
+![ROLE IMG 3](./img/iam-3-role-3.PNG)
 
 # Step 5: Verify
 
@@ -101,7 +101,7 @@ aws rds download-db-log-file-portion \
 --output text > /mnt/rds-mysql-readreplica-test-ap-southeast-1a_general_log.txt
 ```
 
-![VERIFY IMG 1](./img/verify-1.png)
-![VERIFY IMG 2](./img/verify-2.png)
-![VERIFY IMG 3](./img/verify-3.png)
-![VERIFY IMG 4](./img/verify-4.png)
+![VERIFY IMG 1](./img/verify-1.PNG)
+![VERIFY IMG 2](./img/verify-2.PNG)
+![VERIFY IMG 3](./img/verify-3.PNG)
+![VERIFY IMG 4](./img/verify-4.PNG)
