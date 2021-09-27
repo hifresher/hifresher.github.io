@@ -35,14 +35,12 @@
 ***Go to `IAM` service:***
 ![POLICY IMG 1](./img/iam-1.PNG)
 
-***Create new `Policy`***. JSON string at below:
+***Create new `Policy`***.
 
 ![POLICY IMG 2](./img/iam-2-policy-1.PNG)
-![POLICY IMG 3](./img/iam-2-policy-2.PNG)
-![POLICY IMG 4](./img/iam-2-policy-3.PNG)
-![POLICY IMG 5](./img/iam-2-policy-4.PNG)
 
-```
+***JSON:***
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -62,6 +60,16 @@
     ]
 }
 ```
+
+![POLICY IMG 3](./img/iam-2-policy-2.PNG)
+
+***Your policy tag:***
+
+![POLICY IMG 4](./img/iam-2-policy-3.PNG)
+
+***Your policy info (name, description):***
+
+![POLICY IMG 5](./img/iam-2-policy-4.PNG)
 
 # Step 4: Attach Policy to Role
 
