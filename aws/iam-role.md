@@ -1,5 +1,21 @@
 # Step 1: Get RDS Resource Name
 
+```
+- RDS 1
++ DB identifier: rds-mysql-test
++ ***Resource Name:*** arn:aws:rds:ap-southeast-1:8xxxxxxxxxx3:db:rds-mysql-test
+
+- RDS 2
++ DB identifier: rds-mysql-readreplica-test
++ ***Resource Name:*** arn:aws:rds:ap-southeast-1:8xxxxxxxxxx3:db:rds-mysql-readreplica-test
+
+- RDS 3
++ DB identifier: rds-mysql-readreplica-test-ap-southeast-1a
++ ***Resource Name:*** arn:aws:rds:ap-southeast-1:8xxxxxxxxxx3:db:rds-mysql-readreplica-test-ap-southeast-1a
+```
+
+***Step by step get RDS Resource Name:*** :point_down:
+
 ***Go to RDS Dashboard***
 ![RDS IMG 1](./img/rds-1.PNG)
 
@@ -12,21 +28,7 @@
 
 ![RDS IMG 4](./img/rds-4.PNG)
 
-***Click to `rds-mysql-readreplica-test` RDS and get info:*** Same above
-
-```
-- RDS 1
-+ DB identifier: rds-mysql-test
-+ Resource Name: arn:aws:rds:ap-southeast-1:860981500993:db:rds-mysql-test
-
-- RDS 2
-+ DB identifier: rds-mysql-readreplica-test
-+ Resource Name: arn:aws:rds:ap-southeast-1:860981500993:db:rds-mysql-readreplica-test
-
-- RDS 3
-+ DB identifier: rds-mysql-readreplica-test-ap-southeast-1a
-+ Resource Name: arn:aws:rds:ap-southeast-1:860981500993:db:rds-mysql-readreplica-test-ap-southeast-1a
-```
+***Click to `rds-mysql-readreplica-test` RDS and get info: Same above***
 
 # Step 2: Create a custom Policy
 
@@ -52,9 +54,9 @@
                 "rds:DescribeDBLogFiles"
             ],
             "Resource": [
-                "arn:aws:rds:ap-southeast-1:860981500993:db:rds-mysql-test",
-                "arn:aws:rds:ap-southeast-1:860981500993:db:rds-mysql-readreplica-test",
-                "arn:aws:rds:ap-southeast-1:860981500993:db:rds-mysql-readreplica-test-ap-southeast-1a"
+                "arn:aws:rds:ap-southeast-1:8xxxxxxxxxx3:db:rds-mysql-test",
+                "arn:aws:rds:ap-southeast-1:8xxxxxxxxxx3:db:rds-mysql-readreplica-test",
+                "arn:aws:rds:ap-southeast-1:8xxxxxxxxxx3:db:rds-mysql-readreplica-test-ap-southeast-1a"
             ]
         }
     ]
